@@ -1,5 +1,6 @@
 # table2html
 
+### swin-bart
 ```
     CUDA_VISIBLE_DEVICES="0, 1, 2, 3" python3 -m torch.distributed.launch --nproc_per_node 4 ./src/train_swin-bart.py \
         --input_file_dir <your dataset dir> \
@@ -30,6 +31,7 @@
         --use_ddp
 ```
 
+### layoutlmv3-bart
 ```
     CUDA_VISIBLE_DEVICES="0, 1, 2, 3" python3 -m torch.distributed.launch --nproc_per_node 4 ./src/train_layoutlmv3-bart.py \
         --input_file_dir <your dataset dir> \
